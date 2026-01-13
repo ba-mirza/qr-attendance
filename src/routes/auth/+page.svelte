@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { supabase } from '$lib/supabase';
-	import { goto } from '$app/navigation';
 
 	let loading = false;
 	let error = '';
@@ -49,7 +48,6 @@
 
 		<div class="rounded-lg bg-white p-8 shadow-md">
 			<div class="space-y-3">
-				<!-- Google -->
 				<button
 					on:click={signInWithGoogle}
 					disabled={loading}
@@ -76,7 +74,6 @@
 					<span class="font-medium">Войти через Google</span>
 				</button>
 
-				<!-- GitHub -->
 				<button
 					on:click={signInWithGithub}
 					disabled={loading}

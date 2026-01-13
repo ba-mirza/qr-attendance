@@ -23,7 +23,7 @@
 			.single();
 
 		if (owner) {
-			goto('/dashboard');
+			goto('/');
 		} else {
 			goto('/onboarding');
 		}

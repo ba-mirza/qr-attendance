@@ -65,7 +65,7 @@
 
 			if (ownerError) throw ownerError;
 
-			goto('/dashboard');
+			goto('/');
 		} catch (err: any) {
 			if (err instanceof z.ZodError) {
 				error = err.errors[0].message;
